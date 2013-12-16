@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstagefrighthw \
     libmm-omxcore \
+	libemoji \
     libOmxCore
 
 
