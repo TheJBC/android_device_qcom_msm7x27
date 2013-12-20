@@ -30,14 +30,13 @@ COMMON_GLOBAL_CFLAGS += -DTARGET_MSM7x27
 #COMMON_GLOBAL_CFLAGS   += --save-temps
 
 # Graphics
-USE_OPENGL_RENDERER := true
-TARGET_NO_HW_OVERLAY := true
-TARGET_QCOM_DISPLAY_VARIANT := legacy
-BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
-BOARD_EGL_CFG := device/qcom/msm7x27/egl.cfg
-BOARD_EGL_SKIP_FIRST_DEQUEUE := true
+USE_OPENGL_RENDERER                     := true
+TARGET_NO_HW_OVERLAY                    := true
+TARGET_QCOM_DISPLAY_VARIANT             := legacy
+BOARD_ADRENO_DECIDE_TEXTURE_TARGET      := true
+BOARD_EGL_CFG                           := device/qcom/msm7x27/egl.cfg
+BOARD_EGL_NEEDS_LEGACY_FB               := true
 BOARD_EGL_WORKAROUND_BUG_10194508       := true
-BOARD_USE_MHEAP_SCREENSHOT              := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
