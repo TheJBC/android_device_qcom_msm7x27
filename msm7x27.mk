@@ -54,6 +54,13 @@ PRODUCT_PACKAGES += \
 	libemoji \
     libOmxCore
 
+# WebKit
+PRODUCT_PACKAGES += \
+    libwebcore
+
+# Webkit (classic webview provider)
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.webview.provider=classic
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
