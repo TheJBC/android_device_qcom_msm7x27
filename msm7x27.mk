@@ -8,6 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.qctwa.statusbar=1 \
     debug.qctwa.preservebuf=1 \
     hwui.print_config=choice \
+	ro.bq.gpu_to_cpu_unsupported=1 \
     persist.sys.strictmode.visual=false
 
 # Stagefright
@@ -27,6 +28,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0 \
     dalvik.vm.heaptargetutilization=0.25
+	
+# Memory
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low_ram=true
+	
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
