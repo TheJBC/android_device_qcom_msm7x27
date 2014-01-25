@@ -43,7 +43,7 @@ BOARD_USE_MHEAP_SCREENSHOT              := true
 BOARD_USES_QCOM_HARDWARE                := true
 BOARD_USES_QCOM_LIBS                    := true
 COMMON_GLOBAL_CFLAGS                    += -DQCOM_HARDWARE
-#COMMON_GLOBAL_CFLAGS                    += -DQCOM_ICS_COMPAT
+COMMON_GLOBAL_CFLAGS                    += -DQCOM_ICS_COMPAT
 
 # Video
 TARGET_QCOM_LEGACY_OMX                  := true
